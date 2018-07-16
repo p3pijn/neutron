@@ -28,6 +28,8 @@ setuptools*.egg/
 !/.pylintrc
 !/.stestr.conf
 !/.zuul.yaml
+!/.bettercodehub.yml
+!/.bettercodehub.yaml
 .stestr/
 
 # Files created by releasenotes build
