@@ -78,21 +78,7 @@ class cache_method_results(object):
             key += helpers.dict2tuple(kwargs)
         # oslo.cache expects a string or a buffer
         key = str(key)
-        try:
-            item = target_self._cache.get(key)
-        except TypeError:
-            LOG.debug("Method %(func_name)s cannot be cached due to "
-                      "unhashable parameters: args: %(args)s, kwargs: "
-                      "%(kwargs)s",
-                      {'func_name': func_name,
-                       'args': args,
-                       'kwargs': kwargs})
-            return self.func(target_self, *args, **kwargs)
-
-        if item is self._not_cached:
-            item = self.func(target_self, *args, **kwargs)
-            target_self._cache.set(key, item)
-
+        
         return item
 
     def __call__(self, target_self, *args, **kwargs):
