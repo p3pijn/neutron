@@ -65,6 +65,83 @@ class Agent(base.NeutronDbObject):
             # dump resource version into string, set None if empty '{}' or None
             result['resource_versions'] = (
                 cls.filter_to_json_str(result['resource_versions']))
+        query = context.session.query(
+            agent_model.Agent).filter_by(
+            agent_type=agent_type).group_by(
+            agent_model.Agent.availability_zone)
+        query = query.filter(
+            agent_model.Agent.availability_zone.in_(availability_zones)).all()
+        agents = [cls._load_object(context, record) for record in query]
+        query = context.session.query(
+            agent_model.Agent).filter_by(
+            agent_type=agent_type).group_by(
+            agent_model.Agent.availability_zone)
+        query = query.filter(
+            agent_model.Agent.availability_zone.in_(availability_zones)).all()
+        agents = [cls._load_object(context, record) for record in query]  
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions'])) 
+        with cls.db_context_reader(context):
+            query = (context.session.query(agent_model.Agent, func.count(
+                rb_model.RouterL3AgentBinding.router_id)
+                .label('count')).
+                outerjoin(rb_model.RouterL3AgentBinding).
+                group_by(agent_model.Agent.id).
+                filter(agent_model.Agent.id.in_(agent_ids)).
+                order_by('count'))
+        agents = [cls._load_object(context, record[0]) for record in query]
+        if not (network_id or router_id):
+            return []
+        query = context.session.query(agent_model.Agent.host)
+        query = query.join(l3ha_model.L3HARouterAgentPortBinding,
+                           l3ha_model.L3HARouterAgentPortBinding.l3_agent_id ==
+                           agent_model.Agent.id)
+        if router_id:
+            query = query.filter(
+                l3ha_model.L3HARouterAgentPortBinding.router_id ==
+                router_id).all()
+        elif network_id:
+            query = query.join(models_v2.Port, models_v2.Port.device_id ==
+                               l3ha_model.L3HARouterAgentPortBinding.router_id)
+            query = query.filter(models_v2.Port.network_id == network_id,
+                                 models_v2.Port.status ==
+                                 const.PORT_STATUS_ACTIVE,
+                                 models_v2.Port.device_owner.in_(
+                                     (const.DEVICE_OWNER_HA_REPLICATED_INT,
+                                      const.DEVICE_OWNER_ROUTER_SNAT))).all()
+        # L3HARouterAgentPortBinding will have l3 agent ids of hosting agents.
+        # But we need l2 agent(for tunneling ip) while creating FDB entries.
+        hosts = [host[0] for host in query]
+        agents = cls.get_objects(context, host=hosts)
+        if not (network_id or router_id):
+            return []
+        query = context.session.query(agent_model.Agent.host)
+        query = query.join(l3ha_model.L3HARouterAgentPortBinding,
+                           l3ha_model.L3HARouterAgentPortBinding.l3_agent_id ==
+                           agent_model.Agent.id)
+        if router_id:
+            query = query.filter(
+                l3ha_model.L3HARouterAgentPortBinding.router_id ==
+                router_id).all()
+        elif network_id:
+            query = query.join(models_v2.Port, models_v2.Port.device_id ==
+                               l3ha_model.L3HARouterAgentPortBinding.router_id)
+            query = query.filter(models_v2.Port.network_id == network_id,
+                                 models_v2.Port.status ==
+                                 const.PORT_STATUS_ACTIVE,
+                                 models_v2.Port.device_owner.in_(
+                                     (const.DEVICE_OWNER_HA_REPLICATED_INT,
+                                      const.DEVICE_OWNER_ROUTER_SNAT))).all()
+        # L3HARouterAgentPortBinding will have l3 agent ids of hosting agents.
+        # But we need l2 agent(for tunneling ip) while creating FDB entries.
+        hosts = [host[0] for host in query]
+        agents = cls.get_objects(context, host=hosts)             
         return result
 
     @classmethod
@@ -114,7 +191,52 @@ class Agent(base.NeutronDbObject):
                 filter(agent_model.Agent.id.in_(agent_ids)).
                 order_by('count'))
         agents = [cls._load_object(context, record[0]) for record in query]
-
+        if not (network_id or router_id):
+            return []
+        query = context.session.query(agent_model.Agent.host)
+        query = query.join(l3ha_model.L3HARouterAgentPortBinding,
+                           l3ha_model.L3HARouterAgentPortBinding.l3_agent_id ==
+                           agent_model.Agent.id)
+        if router_id:
+            query = query.filter(
+                l3ha_model.L3HARouterAgentPortBinding.router_id ==
+                router_id).all()
+        elif network_id:
+            query = query.join(models_v2.Port, models_v2.Port.device_id ==
+                               l3ha_model.L3HARouterAgentPortBinding.router_id)
+            query = query.filter(models_v2.Port.network_id == network_id,
+                                 models_v2.Port.status ==
+                                 const.PORT_STATUS_ACTIVE,
+                                 models_v2.Port.device_owner.in_(
+                                     (const.DEVICE_OWNER_HA_REPLICATED_INT,
+                                      const.DEVICE_OWNER_ROUTER_SNAT))).all()
+        # L3HARouterAgentPortBinding will have l3 agent ids of hosting agents.
+        # But we need l2 agent(for tunneling ip) while creating FDB entries.
+        hosts = [host[0] for host in query]
+        agents = cls.get_objects(context, host=hosts)
+        if not (network_id or router_id):
+            return []
+        query = context.session.query(agent_model.Agent.host)
+        query = query.join(l3ha_model.L3HARouterAgentPortBinding,
+                           l3ha_model.L3HARouterAgentPortBinding.l3_agent_id ==
+                           agent_model.Agent.id)
+        if router_id:
+            query = query.filter(
+                l3ha_model.L3HARouterAgentPortBinding.router_id ==
+                router_id).all()
+        elif network_id:
+            query = query.join(models_v2.Port, models_v2.Port.device_id ==
+                               l3ha_model.L3HARouterAgentPortBinding.router_id)
+            query = query.filter(models_v2.Port.network_id == network_id,
+                                 models_v2.Port.status ==
+                                 const.PORT_STATUS_ACTIVE,
+                                 models_v2.Port.device_owner.in_(
+                                     (const.DEVICE_OWNER_HA_REPLICATED_INT,
+                                      const.DEVICE_OWNER_ROUTER_SNAT))).all()
+        # L3HARouterAgentPortBinding will have l3 agent ids of hosting agents.
+        # But we need l2 agent(for tunneling ip) while creating FDB entries.
+        hosts = [host[0] for host in query]
+        agents = cls.get_objects(context, host=hosts)        
         return agents
 
     @classmethod
@@ -154,6 +276,27 @@ class Agent(base.NeutronDbObject):
         query = query.filter(
             agent_model.Agent.availability_zone.in_(availability_zones)).all()
         agents = [cls._load_object(context, record) for record in query]
+        query = context.session.query(
+            agent_model.Agent).filter_by(
+            agent_type=agent_type).group_by(
+            agent_model.Agent.availability_zone)
+        query = query.filter(
+            agent_model.Agent.availability_zone.in_(availability_zones)).all()
+        agents = [cls._load_object(context, record) for record in query]
+        query = context.session.query(
+            agent_model.Agent).filter_by(
+            agent_type=agent_type).group_by(
+            agent_model.Agent.availability_zone)
+        query = query.filter(
+            agent_model.Agent.availability_zone.in_(availability_zones)).all()
+        agents = [cls._load_object(context, record) for record in query]
+        query = context.session.query(
+            agent_model.Agent).filter_by(
+            agent_type=agent_type).group_by(
+            agent_model.Agent.availability_zone)
+        query = query.filter(
+            agent_model.Agent.availability_zone.in_(availability_zones)).all()
+        agents = [cls._load_object(context, record) for record in query]        
         return agents
 
     @classmethod
