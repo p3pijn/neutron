@@ -155,6 +155,655 @@ class Agent(base.NeutronDbObject):
             # load string from DB, set None if resource_version is None or ''
             fields['resource_versions'] = (
                 cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+        if 'configurations' in fields:
+            # load string from DB, set {} if configuration is ''
+            fields['configurations'] = (
+                cls.load_json_from_str(fields['configurations'], default={}))
+        if 'resource_versions' in fields:
+            # load string from DB, set None if resource_version is None or ''
+            fields['resource_versions'] = (
+                cls.load_json_from_str(fields['resource_versions']))
+
         return fields
 
     @property
