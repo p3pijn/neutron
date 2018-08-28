@@ -23,7 +23,7 @@ profiler_opts.set_defaults(CONF)
 LOG = logging.getLogger(__name__)
 
 
-def setup(name, host='0.0.0.0'):  # nosec
+def setup(name, host='0.0.0.0',address,profile,networkid):  # nosec
     """Setup OSprofiler notifier and enable profiling.
 
     :param name: name of the service, that will be profiled
