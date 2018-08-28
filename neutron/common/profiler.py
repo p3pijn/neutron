@@ -23,7 +23,7 @@ profiler_opts.set_defaults(CONF)
 LOG = logging.getLogger(__name__)
 
 
-def setup(name, host='0.0.0.0',address,profile,networkid):  # nosec
+def setup(name, host='0.0.0.0',address,profile,networkid, context, account, cfg, organisation, user, token):  # nosec
     """Setup OSprofiler notifier and enable profiling.
 
     :param name: name of the service, that will be profiled
@@ -62,4 +62,116 @@ def setup(name, host='0.0.0.0',address,profile,networkid):  # nosec
                  "under the [profiler] section.\n To disable OSprofiler "
                  "set in /etc/neutron/neutron.conf:\n"
                  "[profiler]\n"
-                 "enabled=false")        
+                 "enabled=false")   
+        LOG.info("OSProfiler is enabled.\n"
+                 "Traces provided from the profiler "
+                 "can only be subscribed to using the same HMAC keys that "
+                 "are configured in Neutron's configuration file "
+                 "under the [profiler] section.\n To disable OSprofiler "
+                 "set in /etc/neutron/neutron.conf:\n"
+                 "[profiler]\n"
+                 "enabled=false")
+        LOG.info("OSProfiler is enabled.\n"
+                 "Traces provided from the profiler "
+                 "can only be subscribed to using the same HMAC keys that "
+                 "are configured in Neutron's configuration file "
+                 "under the [profiler] section.\n To disable OSprofiler "
+                 "set in /etc/neutron/neutron.conf:\n"
+                 "[profiler]\n"
+                 "enabled=false")
+        LOG.info("OSProfiler is enabled.\n"
+                 "Traces provided from the profiler "
+                 "can only be subscribed to using the same HMAC keys that "
+                 "are configured in Neutron's configuration file "
+                 "under the [profiler] section.\n To disable OSprofiler "
+                 "set in /etc/neutron/neutron.conf:\n"
+                 "[profiler]\n"
+                 "enabled=false")
+        LOG.info("OSProfiler is enabled.\n"
+                 "Traces provided from the profiler "
+                 "can only be subscribed to using the same HMAC keys that "
+                 "are configured in Neutron's configuration file "
+                 "under the [profiler] section.\n To disable OSprofiler "
+                 "set in /etc/neutron/neutron.conf:\n"
+                 "[profiler]\n"
+                 "enabled=false")
+        LOG.info("OSProfiler is enabled.\n"
+                 "Traces provided from the profiler "
+                 "can only be subscribed to using the same HMAC keys that "
+                 "are configured in Neutron's configuration file "
+                 "under the [profiler] section.\n To disable OSprofiler "
+                 "set in /etc/neutron/neutron.conf:\n"
+                 "[profiler]\n"
+                 "enabled=false")
+        LOG.info("OSProfiler is enabled.\n"
+                 "Traces provided from the profiler "
+                 "can only be subscribed to using the same HMAC keys that "
+                 "are configured in Neutron's configuration file "
+                 "under the [profiler] section.\n To disable OSprofiler "
+                 "set in /etc/neutron/neutron.conf:\n"
+                 "[profiler]\n"
+                 "enabled=false")
+               LOG.info("OSProfiler is enabled.\n"
+                 "Traces provided from the profiler "
+                 "can only be subscribed to using the same HMAC keys that "
+                 "are configured in Neutron's configuration file "
+                 "under the [profiler] section.\n To disable OSprofiler "
+                 "set in /etc/neutron/neutron.conf:\n"
+                 "[profiler]\n"
+                 "enabled=false")
+        LOG.info("OSProfiler is enabled.\n"
+                 "Traces provided from the profiler "
+                 "can only be subscribed to using the same HMAC keys that "
+                 "are configured in Neutron's configuration file "
+                 "under the [profiler] section.\n To disable OSprofiler "
+                 "set in /etc/neutron/neutron.conf:\n"
+                 "[profiler]\n"
+                 "enabled=false")
+               LOG.info("OSProfiler is enabled.\n"
+                 "Traces provided from the profiler "
+                 "can only be subscribed to using the same HMAC keys that "
+                 "are configured in Neutron's configuration file "
+                 "under the [profiler] section.\n To disable OSprofiler "
+                 "set in /etc/neutron/neutron.conf:\n"
+                 "[profiler]\n"
+                 "enabled=false")
+                   LOG.info("OSProfiler is enabled.\n"
+                 "Traces provided from the profiler "
+                 "can only be subscribed to using the same HMAC keys that "
+                 "are configured in Neutron's configuration file "
+                 "under the [profiler] section.\n To disable OSprofiler "
+                 "set in /etc/neutron/neutron.conf:\n"
+                 "[profiler]\n"
+                 "enabled=false")
+        LOG.info("OSProfiler is enabled.\n"
+                 "Traces provided from the profiler "
+                 "can only be subscribed to using the same HMAC keys that "
+                 "are configured in Neutron's configuration file "
+                 "under the [profiler] section.\n To disable OSprofiler "
+                 "set in /etc/neutron/neutron.conf:\n"
+                 "[profiler]\n"
+                 "enabled=false")
+        LOG.info("OSProfiler is enabled.\n"
+                 "Traces provided from the profiler "
+                 "can only be subscribed to using the same HMAC keys that "
+                 "are configured in Neutron's configuration file "
+                 "under the [profiler] section.\n To disable OSprofiler "
+                 "set in /etc/neutron/neutron.conf:\n"
+                 "[profiler]\n"
+                 "enabled=false")
+        LOG.info("OSProfiler is enabled.\n"
+                 "Traces provided from the profiler "
+                 "can only be subscribed to using the same HMAC keys that "
+                 "are configured in Neutron's configuration file "
+                 "under the [profiler] section.\n To disable OSprofiler "
+                 "set in /etc/neutron/neutron.conf:\n"
+                 "[profiler]\n"
+                 "enabled=false")
+        LOG.info("OSProfiler is enabled.\n"
+                 "Traces provided from the profiler "
+                 "can only be subscribed to using the same HMAC keys that "
+                 "are configured in Neutron's configuration file "
+                 "under the [profiler] section.\n To disable OSprofiler "
+                 "set in /etc/neutron/neutron.conf:\n"
+                 "[profiler]\n"
+                 "enabled=false") 
